@@ -10,7 +10,7 @@ name: e2e tests
 # schedule run
 on:
   schedule: 
-    - cron: "30 8 * * 1-5"   # <=== Change this value
+    - cron: "* 9 * * 1-5"   # <=== Change this value
   workflow_dispatch:
 
 # manual run

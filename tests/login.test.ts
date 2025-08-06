@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('Login user', async ({ page }) => {
   
 await page.goto('https://shopdemo-alex-hot.koyeb.app/login');
 await page.getByRole('main').getByRole('textbox', { name: 'Please Enter Your Email' }).fill('abracadabra@mail.com');

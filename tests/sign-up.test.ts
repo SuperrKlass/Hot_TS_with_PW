@@ -10,6 +10,6 @@ test('User can sign up', async ({ page }) => {
   await page.getByRole('textbox', { name: 'Please Enter Your Password' }).fill(email);
   await page.getByRole('button', { name: 'Sign Up' }).click();
   
-  await expect(page.getByRole('heading', { name: 'Account Details 444' }))
+  await expect(page.getByRole('heading', { name: 'Account Details' }))
       .toBeVisible();
 });
